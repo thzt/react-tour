@@ -1,0 +1,301 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "build",
+  "steps": [
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "默认在实验模式下进行构建，除非指定 RELEASE_CHANNEL",
+      "line": 36,
+      "selection": {
+        "start": {
+          "line": 28,
+          "character": 37
+        },
+        "end": {
+          "line": 28,
+          "character": 52
+        }
+      },
+      "title": "__EXPERIMENTAL__"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "可通过 `--type` 参数指定某次构建的 `bundleType`，\n\n例如，只生成 production 环境下的打包产物，\n```\nnode ./scripts/rollup/build.js --type=NODE_PROD\n```\n\n注：`--type` 可参考 #88 行 `requestedBundleTypes` 的实现",
+      "selection": {
+        "start": {
+          "line": 64,
+          "character": 13
+        },
+        "end": {
+          "line": 64,
+          "character": 24
+        }
+      },
+      "line": null,
+      "title": "bundleTypes"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "可以只构建一部分源码，通过以下方式指定（用逗号分隔）\n\n例如，只打包 react 和 react-dom 源码，\n```\nnode ./scripts/rollup/build.js react,react-dom\n```",
+      "line": 91,
+      "selection": {
+        "start": {
+          "line": 91,
+          "character": 30
+        },
+        "end": {
+          "line": 91,
+          "character": 49
+        }
+      },
+      "title": "requestedBundleNames"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "通过 `--watch` 指定是否开启 watch 模式",
+      "line": 93,
+      "selection": {
+        "start": {
+          "line": 93,
+          "character": 26
+        },
+        "end": {
+          "line": 93,
+          "character": 31
+        }
+      },
+      "title": "isWatchMode"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "closure compiler 的配置项",
+      "line": 113,
+      "title": "closureOptions"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "构建业务逻辑的入口",
+      "line": 785,
+      "title": "buildEverything()"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "构建开始前，会先把 build/ 目录删掉，可以通过指定 `--unsafe-partial` 取消删除 build/ 目录",
+      "line": 723,
+      "selection": {
+        "start": {
+          "line": 720,
+          "character": 14
+        },
+        "end": {
+          "line": 720,
+          "character": 28
+        }
+      },
+      "title": "unsafe-partial"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "`Bundles.bundles` 中保存了所有带打包的模块，当前版本（v17.0.2）中有 52 个模块，\n每一个模块指定多种打包产物类型（bundleType）。",
+      "line": 749,
+      "selection": {
+        "start": {
+          "line": 729,
+          "character": 24
+        },
+        "end": {
+          "line": 729,
+          "character": 39
+        }
+      },
+      "title": "bundles"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "循环处理所有 bundle",
+      "line": 761,
+      "title": "createBundle [forEach]"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "跳过一些不要处理的 bundle，业务逻辑在 #466 行 `shouldSkipBundle`",
+      "line": 533,
+      "title": "shouldSkipBundle"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "打包产物的文件名，例如 `react.development.js`",
+      "line": 534,
+      "selection": {
+        "start": {
+          "line": 534,
+          "character": 9
+        },
+        "end": {
+          "line": 534,
+          "character": 17
+        }
+      },
+      "title": "getFilename"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "打包产物的格式，例如，`umd`",
+      "line": 537,
+      "selection": {
+        "start": {
+          "line": 537,
+          "character": 9
+        },
+        "end": {
+          "line": 537,
+          "character": 15
+        }
+      },
+      "title": "getFormat"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "入口文件路径，例如，\n```\n/Users/.../react/packages/react/index.experimental.js\n```",
+      "line": 554,
+      "selection": {
+        "start": {
+          "line": 550,
+          "character": 1
+        },
+        "end": {
+          "line": 553,
+          "character": 5
+        }
+      },
+      "title": "resolvedEntry"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "要不要打包依赖",
+      "line": 558,
+      "selection": {
+        "start": {
+          "line": 555,
+          "character": 1
+        },
+        "end": {
+          "line": 558,
+          "character": 34
+        }
+      },
+      "title": "shouldBundleDependencies"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "```\nprop-types/checkPropTypes:false\nreact-dom:false\nreact-dom/server:false\nreact-fetch/node:false\nreact-native/Libraries/ReactPrivate/ReactNativePrivateInterface:false\nreact/jsx-dev-runtime:false\nscheduler:false\nscheduler/tracing:false\n```",
+      "line": 566,
+      "title": "importSideEffects"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "```\n[\n  \"prop-types/checkPropTypes\",\n  \"react-native/Libraries/ReactPrivate/ReactNativePrivateInterface\",\n  \"scheduler\",\n  \"scheduler/tracing\",\n  \"react-dom/server\",\n  \"react/jsx-dev-runtime\",\n  \"react-fetch/node\",\n  \"react-dom\"\n]\n```\n\n关于 `pureExternalModules` 可参考，  \nhttps://rollupjs.org/guide/en/#treeshakepureexternalmodules  \n配置 rollup 不进行 tree-shaking 的模块名\n",
+      "line": 570,
+      "selection": {
+        "start": {
+          "line": 567,
+          "character": 9
+        },
+        "end": {
+          "line": 567,
+          "character": 28
+        }
+      },
+      "title": "pureExternalModules"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "rollup 的配置",
+      "line": 603,
+      "selection": {
+        "start": {
+          "line": 571,
+          "character": 1
+        },
+        "end": {
+          "line": 603,
+          "character": 5
+        }
+      },
+      "title": "rollupConfig"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "build/node_modules/react/umd/react.development.js",
+      "line": 608,
+      "selection": {
+        "start": {
+          "line": 604,
+          "character": 1
+        },
+        "end": {
+          "line": 608,
+          "character": 5
+        }
+      },
+      "title": "mainOutputPath"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "rollup 配置里的 output 字段",
+      "line": 615,
+      "selection": {
+        "start": {
+          "line": 609,
+          "character": 1
+        },
+        "end": {
+          "line": 615,
+          "character": 5
+        }
+      },
+      "title": "rollupOutputOptions"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "watch 模式，就调用 rollup.watch 进行构建",
+      "line": 619,
+      "title": "rollup.watch"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "普通模式（非 watch），就调用 rollup.rollup 进行构建",
+      "line": 638,
+      "title": "rollup.rollup"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "这时候各模块已经打包好，并写入文件了。",
+      "line": 761,
+      "title": "createBundle [done]"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "做一些文件拷贝工作，例如，将源码中的 package.json 或者 README.md 拷贝到构建产物目录中去",
+      "line": 763,
+      "selection": {
+        "start": {
+          "line": 762,
+          "character": 1
+        },
+        "end": {
+          "line": 763,
+          "character": 40
+        }
+      },
+      "title": "copyAllShims, prepareNpmPackages"
+    },
+    {
+      "file": "scripts/rollup/build.js",
+      "description": "打印构建产物的表格",
+      "line": 771,
+      "title": "printResults"
+    }
+  ],
+  "ref": "v17.0.2"
+}
