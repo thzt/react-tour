@@ -1,0 +1,387 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2. react 加载过程",
+  "steps": [
+    {
+      "file": "build/node_modules/react/index.js",
+      "description": "`import React from 'react';` 会加载当前文件（`build/node_modules/react/index.js`）  \n然后，加载 `./cjs/react.development.js` 这个文件",
+      "line": 6,
+      "selection": {
+        "start": {
+          "line": 6,
+          "character": 29
+        },
+        "end": {
+          "line": 6,
+          "character": 55
+        }
+      },
+      "title": "require('./cjs/react.development.js')"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "加载 `build/node_modules/react/cjs/react.development.js` 文件",
+      "line": 11,
+      "title": "load react.development.js"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "react.development.js 业务逻辑",
+      "line": 15,
+      "title": "biz logic"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "这个是在构建阶段生成的，'17.0.0' 在这里 packages/shared/ReactVersion.js",
+      "line": 19,
+      "selection": {
+        "start": {
+          "line": 19,
+          "character": 1
+        },
+        "end": {
+          "line": 19,
+          "character": 29
+        }
+      },
+      "title": "ReactVersion"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "初始化了一些 Symbol",
+      "line": 72,
+      "selection": {
+        "start": {
+          "line": 21,
+          "character": 1
+        },
+        "end": {
+          "line": 72,
+          "character": 41
+        }
+      },
+      "title": "Symbol"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "初始化 ReactCurrentDispatcher, ReactCurrentBatchConfig, ReactCurrentOwner",
+      "line": 119,
+      "selection": {
+        "start": {
+          "line": 112,
+          "character": 5
+        },
+        "end": {
+          "line": 112,
+          "character": 22
+        }
+      },
+      "title": "ReactCurrentDispatcher, ReactCurrentBatchConfig, ReactCurrentOwner"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "初始化 ReactDebugCurrentFrame， 以及它的几个方法\n+ setExtraStackFrame\n+ getCurrentStack\n+ getStackAddendum",
+      "line": 154,
+      "selection": {
+        "start": {
+          "line": 138,
+          "character": 26
+        },
+        "end": {
+          "line": 138,
+          "character": 42
+        }
+      },
+      "title": "ReactDebugCurrentFrame"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "ReactSharedInternals",
+      "line": 174,
+      "selection": {
+        "start": {
+          "line": 156,
+          "character": 1
+        },
+        "end": {
+          "line": 174,
+          "character": 2
+        }
+      },
+      "title": "ReactSharedInternals"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "warn & error 方法",
+      "line": 240,
+      "selection": {
+        "start": {
+          "line": 176,
+          "character": 1
+        },
+        "end": {
+          "line": 240,
+          "character": 2
+        }
+      },
+      "title": "warn & error"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "ReactNoopUpdateQueue 是一个队列数据结构\n+ isMounted\n+ enqueueForceUpdate\n+ enqueueReplaceState\n+ enqueueSetState",
+      "line": 309,
+      "selection": {
+        "start": {
+          "line": 306,
+          "character": 3
+        },
+        "end": {
+          "line": 306,
+          "character": 18
+        }
+      },
+      "title": "ReactNoopUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "一个空对象，freeze 后不可再添加属性了",
+      "line": 315,
+      "selection": {
+        "start": {
+          "line": 311,
+          "character": 1
+        },
+        "end": {
+          "line": 315,
+          "character": 2
+        }
+      },
+      "title": "emptyObject"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "React 暴露出来的那个 Component 对象，有以下几个实例方法，\n+ isReactComponent\n+ setState\n+ forceUpdate",
+      "line": 385,
+      "selection": {
+        "start": {
+          "line": 383,
+          "character": 21
+        },
+        "end": {
+          "line": 383,
+          "character": 32
+        }
+      },
+      "title": "React.Component"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "Component 中的已废弃的实例方法，访问的时候进行 warning，\n+ isMounted\n+ replaceState",
+      "line": 414,
+      "selection": {
+        "start": {
+          "line": 396,
+          "character": 5
+        },
+        "end": {
+          "line": 396,
+          "character": 17
+        }
+      },
+      "title": "deprecatedAPIs"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "PureComponent",
+      "line": 436,
+      "selection": {
+        "start": {
+          "line": 416,
+          "character": 1
+        },
+        "end": {
+          "line": 436,
+          "character": 52
+        }
+      },
+      "title": "React.PureComponent"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "一些内置的保留属性名 RESERVED_PROPS\n+ key\n+ ref\n+ __self\n+ __source",
+      "line": 543,
+      "selection": {
+        "start": {
+          "line": 538,
+          "character": 1
+        },
+        "end": {
+          "line": 543,
+          "character": 3
+        }
+      },
+      "title": "RESERVED_PROPS"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "ReactElement",
+      "line": 701,
+      "selection": {
+        "start": {
+          "line": 627,
+          "character": 1
+        },
+        "end": {
+          "line": 701,
+          "character": 3
+        }
+      },
+      "title": "ReactElement"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "element 结构如下，\n\n```\n{\n  $$typeof,\n  type,\n  key,\n  ref,\n  props,\n  _owner,\n  _store: {\n    validated,\n    _self,\n    _source,\n  }\n}\n```",
+      "line": 700,
+      "selection": {
+        "start": {
+          "line": 687,
+          "character": 37
+        },
+        "end": {
+          "line": 687,
+          "character": 44
+        }
+      },
+      "title": "element"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "React.createElement",
+      "line": 787,
+      "selection": {
+        "start": {
+          "line": 702,
+          "character": 1
+        },
+        "end": {
+          "line": 787,
+          "character": 2
+        }
+      },
+      "title": "React.createElement"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "React.cloneElement",
+      "line": 867,
+      "selection": {
+        "start": {
+          "line": 792,
+          "character": 1
+        },
+        "end": {
+          "line": 867,
+          "character": 2
+        }
+      },
+      "title": "React.cloneElement"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "createContext",
+      "line": 1265,
+      "selection": {
+        "start": {
+          "line": 1146,
+          "character": 1
+        },
+        "end": {
+          "line": 1265,
+          "character": 2
+        }
+      },
+      "title": "createContext"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "context 对象结构如下，\n```\n{\n    $$typeof,\n    _calculateChangedBits,\n    _currentValue,\n    _currentValue2,\n    _threadCount,\n    Provider: {\n      $$typeof,\n      _context,\n    },\n    Consumer: {\n      $$typeof,\n      _context,\n      _calculateChangedBits,\n      Provider,\n      _currentValue,\n      _currentValue2,\n      _currentRenderer,\n      _currentRenderer2,\n      _threadCount,\n      Consumer,\n      displayName,\n    },\n  }\n```",
+      "line": 1264,
+      "selection": {
+        "start": {
+          "line": 1175,
+          "character": 5
+        },
+        "end": {
+          "line": 1176,
+          "character": 22
+        }
+      },
+      "title": "context"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "一些 React Hook\n+ useContext\n+ useState\n+ useReducer\n+ useRef\n+ useEffect\n+ useLayoutEffect\n+ useCallback\n+ useMemo\n+ useImperativeHandle\n+ useDebugValue\n+ useTransition\n+ useDeferredValue\n+ useOpaqueIdentifier\n+ useMutableSource",
+      "line": 1622,
+      "selection": {
+        "start": {
+          "line": 1577,
+          "character": 1
+        },
+        "end": {
+          "line": 1622,
+          "character": 2
+        }
+      },
+      "title": "React Hooks"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "把 console.* 禁掉或重新启用",
+      "line": 1716,
+      "selection": {
+        "start": {
+          "line": 1624,
+          "character": 1
+        },
+        "end": {
+          "line": 1716,
+          "character": 2
+        }
+      },
+      "title": "console"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "实际暴露出来的 React.createElement 是 createElementWithValidation",
+      "line": 2403,
+      "selection": {
+        "start": {
+          "line": 2403,
+          "character": 1
+        },
+        "end": {
+          "line": 2403,
+          "character": 53
+        }
+      },
+      "title": "createElement$1"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": "导出一些对象",
+      "line": 2444,
+      "selection": {
+        "start": {
+          "line": 2414,
+          "character": 1
+        },
+        "end": {
+          "line": 2444,
+          "character": 32
+        }
+      },
+      "title": "exports"
+    }
+  ],
+  "ref": "v17.0.2"
+}
