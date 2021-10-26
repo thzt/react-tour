@@ -1,0 +1,563 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "4. ReactDOM.render 过程",
+  "steps": [
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "ReactDOM.render 入口\n+ element 是 `<App />`\n+ container 是 `document.getElementById('root')`",
+      "line": 27165,
+      "title": "ReactDOM.render"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "render 的具体实现 legacyRenderSubtreeIntoContainer",
+      "line": 27071,
+      "selection": {
+        "start": {
+          "line": 27070,
+          "character": 10
+        },
+        "end": {
+          "line": 27070,
+          "character": 42
+        }
+      },
+      "title": "legacyRenderSubtreeIntoContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "root 为 undefined，第一次加载时",
+      "line": 27078,
+      "selection": {
+        "start": {
+          "line": 27078,
+          "character": 24
+        },
+        "end": {
+          "line": 27078,
+          "character": 43
+        }
+      },
+      "title": "root"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "legacyCreateRootFromDOMContainer",
+      "line": 27030,
+      "title": "legacyCreateRootFromDOMContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createLegacyRoot",
+      "line": 26960,
+      "selection": {
+        "start": {
+          "line": 26959,
+          "character": 10
+        },
+        "end": {
+          "line": 26959,
+          "character": 26
+        }
+      },
+      "title": "createLegacyRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "new ReactDOMBlockingRoot",
+      "line": 26874,
+      "title": "new ReactDOMBlockingRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createRootImpl",
+      "line": 26916,
+      "title": "createRootImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createContainer",
+      "line": 26434,
+      "title": "createContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createFiberRoot",
+      "line": 26309,
+      "title": "createFiberRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createHostRootFiber",
+      "line": 25934,
+      "selection": {
+        "start": {
+          "line": 25934,
+          "character": 1
+        },
+        "end": {
+          "line": 25935,
+          "character": 1
+        }
+      },
+      "title": "createHostRootFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createFiber",
+      "line": 25744,
+      "selection": {
+        "start": {
+          "line": 25743,
+          "character": 5
+        },
+        "end": {
+          "line": 25743,
+          "character": 16
+        }
+      },
+      "title": "createFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "new FiberRootNode",
+      "line": 26258,
+      "title": "new FiberRootNode"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "new FiberNode\n",
+      "line": 25663,
+      "selection": {
+        "start": {
+          "line": 25662,
+          "character": 10
+        },
+        "end": {
+          "line": 25662,
+          "character": 19
+        }
+      },
+      "title": "new FiberNode"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "root.current // FiberNode",
+      "line": 26314,
+      "title": "root.current "
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "initializeUpdateQueue",
+      "line": 12276,
+      "selection": {
+        "start": {
+          "line": 12275,
+          "character": 10
+        },
+        "end": {
+          "line": 12275,
+          "character": 31
+        }
+      },
+      "title": "initializeUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "root = {  // FiberRootNode\n  current: {  // FiberNode\n    updateQueue,  // UpdateQueue\n  }\n}",
+      "line": 26317,
+      "title": "root.current.updateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "这个 root 是一个 FiberRootNode",
+      "line": 26920,
+      "selection": {
+        "start": {
+          "line": 26920,
+          "character": 7
+        },
+        "end": {
+          "line": 26920,
+          "character": 11
+        }
+      },
+      "title": "root = createContainer(...)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "给 rootContainer（div#root） 挂载所有事件：allNativeEvents 有 80 个 events",
+      "line": 8469,
+      "selection": {
+        "start": {
+          "line": 8469,
+          "character": 5
+        },
+        "end": {
+          "line": 8469,
+          "character": 20
+        }
+      },
+      "title": "allNativeEvents"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "root created",
+      "line": 26936,
+      "selection": {
+        "start": {
+          "line": 26936,
+          "character": 10
+        },
+        "end": {
+          "line": 26936,
+          "character": 14
+        }
+      },
+      "title": "root created"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "container._reactRootContainer._internalRoot  // FiberRootNode",
+      "line": 27084,
+      "selection": {
+        "start": {
+          "line": 27084,
+          "character": 22
+        },
+        "end": {
+          "line": 27084,
+          "character": 35
+        }
+      },
+      "title": "fiberRoot = root._internalRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "updateContainer",
+      "line": 26437,
+      "selection": {
+        "start": {
+          "line": 26436,
+          "character": 10
+        },
+        "end": {
+          "line": 26436,
+          "character": 25
+        }
+      },
+      "title": "updateContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "container(FiberRootNode).current(FiberNode)",
+      "line": 26441,
+      "title": "current$1 = container.current"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "createUpdate [start]",
+      "line": 26474,
+      "selection": {
+        "start": {
+          "line": 26474,
+          "character": 16
+        },
+        "end": {
+          "line": 26474,
+          "character": 28
+        }
+      },
+      "title": "createUpdate"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "创建一个循环链表，自己指向自己\n\n这说明 update 是一个循环链表，通过 next 属性进行连接",
+      "line": 12327,
+      "title": "update.next"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "有两个 FiberRootNode，一个是 root，另一个是 WIP root",
+      "line": 22727,
+      "selection": {
+        "start": {
+          "line": 22727,
+          "character": 16
+        },
+        "end": {
+          "line": 22727,
+          "character": 34
+        }
+      },
+      "title": "workInProgressRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "performSyncWorkOnRoot",
+      "line": 22761,
+      "selection": {
+        "start": {
+          "line": 22761,
+          "character": 7
+        },
+        "end": {
+          "line": 22761,
+          "character": 28
+        }
+      },
+      "title": "performSyncWorkOnRoot [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "renderRootSync",
+      "line": 23173,
+      "selection": {
+        "start": {
+          "line": 23173,
+          "character": 18
+        },
+        "end": {
+          "line": 23173,
+          "character": 32
+        }
+      },
+      "title": "renderRootSync [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "开始 render 了",
+      "line": 11657,
+      "selection": {
+        "start": {
+          "line": 11657,
+          "character": 7
+        },
+        "end": {
+          "line": 11657,
+          "character": 18
+        }
+      },
+      "title": "--render-start-"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "开始无限循环执行 workLoopSync，抛异常就继续循环，否则只执行一遍",
+      "line": 23585,
+      "selection": {
+        "start": {
+          "line": 23585,
+          "character": 7
+        },
+        "end": {
+          "line": 23585,
+          "character": 19
+        }
+      },
+      "title": "workLoopSync [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "里面又一个无限循环，直到 workInProgress 为 null 才退出",
+      "line": 23627,
+      "selection": {
+        "start": {
+          "line": 23625,
+          "character": 10
+        },
+        "end": {
+          "line": 23625,
+          "character": 24
+        }
+      },
+      "title": "while workInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "performUnitOfWork",
+      "line": 23626,
+      "selection": {
+        "start": {
+          "line": 23626,
+          "character": 5
+        },
+        "end": {
+          "line": 23626,
+          "character": 22
+        }
+      },
+      "title": "performUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "unitOfWork 就是 WIP 的那个 FiberNode\n",
+      "line": 23697,
+      "selection": {
+        "start": {
+          "line": 23697,
+          "character": 28
+        },
+        "end": {
+          "line": 23697,
+          "character": 38
+        }
+      },
+      "title": "performUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "beginWork$1",
+      "line": 23707,
+      "title": "beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "in beginWork",
+      "line": 19643,
+      "title": "in beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "updateHostRoot\n",
+      "line": 19887,
+      "title": "updateHostRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "in updateHostRoot",
+      "line": 18123,
+      "title": "in updateHostRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "updateQueue.shared.pending.next.next.next...",
+      "line": 18125,
+      "title": "updateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "processUpdateQueue\n",
+      "line": 18137,
+      "selection": {
+        "start": {
+          "line": 18137,
+          "character": 3
+        },
+        "end": {
+          "line": 18137,
+          "character": 21
+        }
+      },
+      "title": "processUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "in processUpdateQueue",
+      "line": 12516,
+      "selection": {
+        "start": {
+          "line": 12516,
+          "character": 10
+        },
+        "end": {
+          "line": 12516,
+          "character": 28
+        }
+      },
+      "title": "in processUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "同时维护着两棵树（由 FiberNode 构成的），每棵树的 alternate 属性指向另一棵树",
+      "line": 12550,
+      "selection": {
+        "start": {
+          "line": 12550,
+          "character": 34
+        },
+        "end": {
+          "line": 12550,
+          "character": 43
+        }
+      },
+      "title": "workInProgress.alternate"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "getStateFromUpdate",
+      "line": 12625,
+      "selection": {
+        "start": {
+          "line": 12625,
+          "character": 20
+        },
+        "end": {
+          "line": 12625,
+          "character": 38
+        }
+      },
+      "title": "getStateFromUpdate"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "reconcileChildren",
+      "line": 18184,
+      "selection": {
+        "start": {
+          "line": 18184,
+          "character": 5
+        },
+        "end": {
+          "line": 18184,
+          "character": 22
+        }
+      },
+      "title": "reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "处理 FiberRootNode 的所有子元素，直到 WIP 为空",
+      "line": 23628,
+      "title": "workLoopSync end"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "--render-stop",
+      "line": 11671,
+      "selection": {
+        "start": {
+          "line": 11671,
+          "character": 25
+        },
+        "end": {
+          "line": 11671,
+          "character": 38
+        }
+      },
+      "title": "--render-stop"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "开始 commit 阶段",
+      "line": 23209,
+      "title": "commitRoot [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "--commit-start-",
+      "line": 11587,
+      "selection": {
+        "start": {
+          "line": 11587,
+          "character": 1
+        },
+        "end": {
+          "line": 11588,
+          "character": 1
+        }
+      },
+      "title": "--commit-start-"
+    }
+  ],
+  "ref": "v17.0.2"
+}
