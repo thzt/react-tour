@@ -1,6 +1,8 @@
 // tour 文件的格式变换
 // 用于：【4.1.1 组件加载过程：函数组件（全流程）】.tour
 
+const fs = require('fs');
+
 // 还原
 // '____[2] func' -> '2.func'
 const restore = (filePath) => {
