@@ -1,0 +1,231 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "4.1 组件加载过程：函数组件（call stack）",
+  "steps": [
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "ReactDOM.render -> legacyRenderSubtreeIntoContainer",
+      "line": 27179,
+      "selection": {
+        "start": {
+          "line": 27179,
+          "character": 10
+        },
+        "end": {
+          "line": 27179,
+          "character": 42
+        }
+      },
+      "title": "render"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "legacyRenderSubtreeIntoContainer -> unbatchedUpdates",
+      "line": 27096,
+      "selection": {
+        "start": {
+          "line": 27096,
+          "character": 5
+        },
+        "end": {
+          "line": 27096,
+          "character": 21
+        }
+      },
+      "title": "legacyRenderSubtreeIntoContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "unbatchedUpdates -> fn",
+      "line": 23324,
+      "selection": {
+        "start": {
+          "line": 23324,
+          "character": 12
+        },
+        "end": {
+          "line": 23324,
+          "character": 14
+        }
+      },
+      "title": "unbatchedUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "fn -> updateContainer",
+      "line": 27097,
+      "selection": {
+        "start": {
+          "line": 27097,
+          "character": 7
+        },
+        "end": {
+          "line": 27097,
+          "character": 22
+        }
+      },
+      "title": "fn"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "updateContainer -> scheduleUpdateOnFiber",
+      "line": 26493,
+      "selection": {
+        "start": {
+          "line": 26493,
+          "character": 3
+        },
+        "end": {
+          "line": 26493,
+          "character": 24
+        }
+      },
+      "title": "updateContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "scheduleUpdateOnFiber -> performSyncWorkOnRoot",
+      "line": 22761,
+      "selection": {
+        "start": {
+          "line": 22761,
+          "character": 7
+        },
+        "end": {
+          "line": 22761,
+          "character": 28
+        }
+      },
+      "title": "scheduleUpdateOnFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "performSyncWorkOnRoot -> renderRootSync",
+      "line": 23173,
+      "selection": {
+        "start": {
+          "line": 23173,
+          "character": 18
+        },
+        "end": {
+          "line": 23173,
+          "character": 32
+        }
+      },
+      "title": "performSyncWorkOnRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "renderRootSync -> workLoopSync",
+      "line": 23585,
+      "selection": {
+        "start": {
+          "line": 23585,
+          "character": 7
+        },
+        "end": {
+          "line": 23585,
+          "character": 19
+        }
+      },
+      "title": "renderRootSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "workLoopSync -> performUnitOfWork",
+      "line": 23626,
+      "selection": {
+        "start": {
+          "line": 23626,
+          "character": 5
+        },
+        "end": {
+          "line": 23626,
+          "character": 22
+        }
+      },
+      "title": "workLoopSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "performUnitOfWork -> beginWork$1",
+      "line": 23707,
+      "selection": {
+        "start": {
+          "line": 23697,
+          "character": 10
+        },
+        "end": {
+          "line": 23697,
+          "character": 27
+        }
+      },
+      "title": "performUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "beginWork$1 -> beginWork",
+      "line": 24936,
+      "selection": {
+        "start": {
+          "line": 24927,
+          "character": 3
+        },
+        "end": {
+          "line": 24927,
+          "character": 14
+        }
+      },
+      "title": "beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "beginWork -> mountIndeterminateComponent",
+      "line": 19859,
+      "selection": {
+        "start": {
+          "line": 19859,
+          "character": 16
+        },
+        "end": {
+          "line": 19859,
+          "character": 43
+        }
+      },
+      "title": "beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "mountIndeterminateComponent -> renderWithHooks",
+      "line": 18405,
+      "selection": {
+        "start": {
+          "line": 18365,
+          "character": 10
+        },
+        "end": {
+          "line": 18365,
+          "character": 37
+        }
+      },
+      "title": "mountIndeterminateComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": "renderWithHooks -> Component",
+      "line": 15527,
+      "selection": {
+        "start": {
+          "line": 15488,
+          "character": 10
+        },
+        "end": {
+          "line": 15488,
+          "character": 25
+        }
+      },
+      "title": "renderWithHooks"
+    }
+  ],
+  "ref": "v17.0.2"
+}

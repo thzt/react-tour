@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "3. react-dom 加载过程",
+  "title": "3.2 react-dom 的加载过程",
   "steps": [
     {
       "file": "build/node_modules/react-dom/index.js",

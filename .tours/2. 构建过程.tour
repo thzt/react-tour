@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "1. 构建过程 scripts/rollup/build.js",
+  "title": "2. 构建过程",
   "steps": [
     {
       "file": "scripts/rollup/build.js",
