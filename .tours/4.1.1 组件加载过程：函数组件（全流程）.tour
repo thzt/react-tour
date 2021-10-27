@@ -113,12 +113,6 @@
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
-      "line": 25745,
-      "title": "10.new FiberNode"
-    },
-    {
-      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
-      "description": " ",
       "line": 26316,
       "title": "8.initializeUpdateQueue"
     },
@@ -336,48 +330,12 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 25789,
-      "selection": {
-        "start": {
-          "line": 25789,
-          "character": 22
-        },
-        "end": {
-          "line": 25789,
-          "character": 33
-        }
-      },
       "title": "10.createFiber"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
-      "line": 25745,
-      "selection": {
-        "start": {
-          "line": 25745,
-          "character": 10
-        },
-        "end": {
-          "line": 25745,
-          "character": 23
-        }
-      },
-      "title": "11.new FiberNode"
-    },
-    {
-      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
-      "description": " ",
       "line": 23428,
-      "selection": {
-        "start": {
-          "line": 23428,
-          "character": 29
-        },
-        "end": {
-          "line": 23428,
-          "character": 51
-        }
-      },
       "title": "9.discardPendingWarnings"
     },
     {
@@ -408,7 +366,7 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 23626,
-      "title": "9.performUnitOfWork"
+      "title": "9.performUnitOfWork ---- [HostRoot {tag: 3}]"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -443,8 +401,152 @@
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
-      "line": 25745,
-      "title": "13.new FiberNode"
+      "line": 24936,
+      "title": "11.beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19887,
+      "title": "12.updateHostRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18124,
+      "title": "13.pushHostRootContext"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18117,
+      "title": "14.pushTopLevelContextObject"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18136,
+      "title": "13.cloneUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18137,
+      "title": "13.processUpdateQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 12625,
+      "title": "14.getStateFromUpdate"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 12676,
+      "title": "14.markSkippedUpdateLanes"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18184,
+      "title": "13.reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17543,
+      "title": "14.reconcileChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "15.reconcileSingleElement"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14537,
+      "title": "16.createFiberFromElement"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26088,
+      "title": "17.createFiberFromTypeAndProps"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25968,
+      "title": "18.resolveFunctionForHotReloading"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26067,
+      "title": "18.createFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14539,
+      "title": "16.coerceRef"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "15.placeSingleChild"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18185,
+      "title": "13.resetHydrationState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23708,
+      "title": "10.stopProfilerTimerIfRunningAndRecordDelta"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23713,
+      "title": "10.resetCurrentFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "9.performUnitOfWork ---- [IndeterminateComponent {tag: 2}] (<App />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23702,
+      "title": "10.setCurrentFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23706,
+      "title": "10.startProfilerTimer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "10.beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24933,
+      "title": "11.assignFiberPropertiesInDEV"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -457,6 +559,24 @@
       "description": " ",
       "line": 19859,
       "title": "12.mountIndeterminateComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18381,
+      "title": "13.getUnmaskedContext"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18382,
+      "title": "13.getMaskedContext"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18385,
+      "title": "13.prepareToReadContext"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -521,12 +641,6 @@
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
-      "line": 25745,
-      "title": "18.new_FiberNode"
-    },
-    {
-      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
-      "description": " ",
       "line": 14614,
       "title": "15.placeSingleChild"
     },
@@ -552,7 +666,7 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 23626,
-      "title": "9.performUnitOfWork"
+      "title": "9.performUnitOfWork ---- [HostText {tag: 6}] ('hello world')"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -583,12 +697,6 @@
       "description": " ",
       "line": 26210,
       "title": "12.createFiber"
-    },
-    {
-      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
-      "description": " ",
-      "line": 25745,
-      "title": "13.new FiberNode"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -642,7 +750,25 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 23746,
-      "title": "11.completeWork"
+      "title": "11.completeWork ---- [HostText {tag: 6}] ('hello world')"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 20316,
+      "title": "12.getRootHostContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 20318,
+      "title": "12.getHostContext"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 20320,
+      "title": "12.popHydrationState"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -672,7 +798,7 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 9180,
-      "title": "14.createTextNode"
+      "title": "14.createTextNode [HTMLElement] ('hello world')"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -714,7 +840,7 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 23746,
-      "title": "11.completeWork"
+      "title": "11.completeWork ---- [IndeterminateComponent {tag: 2}] (<App />)"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -750,7 +876,7 @@
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
       "line": 23746,
-      "title": "11.completeWork"
+      "title": "11.completeWork ---- [HostRoot {tag: 3}]"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",

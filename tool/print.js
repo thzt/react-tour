@@ -45,3 +45,29 @@ const print = (filePath) => {
 
   fs.writeFileSync(filePath, JSON.stringify(json, null, 2));
 };
+
+// 打印到控制台
+const printText = (filePath) => {
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
+  const json = JSON.parse(fileContent);
+
+  const results = [];
+
+  json.steps.forEach(step => {
+    const { title } = step;
+    const regExp = /^(\d+)\.(.+)$/;
+    const match = regExp.exec(title);
+    if (match == null) {
+      debugger
+      throw new Error(`not match: ${title}`);
+    }
+    const [, tabs, name] = match;
+
+    const item = `${Array(tabs * 4 + 1).join(' ')}[${tabs}] ${name}`;
+    results.push(item);
+  });
+
+  results.forEach(item => {
+    console.log(item);
+  });
+};

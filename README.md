@@ -14,4 +14,14 @@
 
 - - -
 
-当前仓库中，还包含了 React v17.0.2 的构建产物目录 `build/`，用于提供 github 链接用来展示。
+其他目录介绍  
+  
+（1）`build/`  
+React v17.0.2 的构建产物目录，用于提供 github 链接展示
+  
+（2）`example-project/`  
+一个极简的 React 示例项目，用于调试 React 代码用  
+  
+（3）`tool/`  
++ **link.bash**：用于将 `example-project` 中对 react 和 react-dom 的依赖，改成指向 React 的构建产物
++ **print.js**：用于对 code tour 中的 title 进行缩进显示
