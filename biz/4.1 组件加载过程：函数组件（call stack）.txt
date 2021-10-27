@@ -1,0 +1,14 @@
+render
+legacyRenderSubtreeIntoContainer
+unbatchedUpdates
+fn
+updateContainer
+scheduleUpdateOnFiber
+performSyncWorkOnRoot
+renderRootSync
+workLoopSync
+performUnitOfWork
+beginWork$1
+beginWork
+mountIndeterminateComponent
+renderWithHooks
