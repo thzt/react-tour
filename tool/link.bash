@@ -16,5 +16,6 @@ echo ''
 echo '创建软链接'
 ln -s $ReactProject/build/node_modules/react $ExampleProject/node_modules/react
 ln -s $ReactProject/build/node_modules/react-dom $ExampleProject/node_modules/react-dom
+ln -s $ExampleProject $ReactProject/example-project
 echo 'done'
 echo ''
