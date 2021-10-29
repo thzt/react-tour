@@ -102,34 +102,34 @@
                                                     [13] completeWork {tag: 0} (<App />)
                                                     [13] completeWork {tag: 3}
                                         [10] markRenderStopped [render end]
-                            [7] commitRoot
-                                [8] runWithPriority$1
-                                    [9] Scheduler_runWithPriority
-                                        [10] eventHandler=commitRootImpl
-                                            [11] markCommitStarted [commit start]
-                                            [11] invokeGuardedCallback
-                                                [12] invokeGuardedCallbackImpl$1
-                                                    [13] dispatchEvent
-                                                        [14] func=commitBeforeMutationEffects
-                                            [11] invokeGuardedCallback
-                                                [12] invokeGuardedCallbackImpl$1
-                                                    [13] dispatchEvent
-                                                        [14] func=commitMutationEffects
-                                                            [15] commitWork
-                                                                [16] commitUpdate
-                                                                    [17] updateFiberProps {children: 1}
-                                                                    [17] updateProperties
-                                                                        [18] updateDOMProperties
-                                                                            [19] setTextContent
-                                                                                [20] (firstChild {#text}.nodeValue {'0'} = text {'1'}) [udpate dom]
-                                            [11] (root {tag: 0} .current {tag: 3} = finishedWork {tag: 3})
-                                            [11] invokeGuardedCallback
-                                                [12] invokeGuardedCallbackImpl
-                                                    [13] dispatchEvent
-                                                        [14] func=commitLayoutEffects
-                                                            [15] commitLifeCycles
-                                            [11] flushSyncCallbackQueue
-                                                [12] flushSyncCallbackQueueImpl
-                                            [11] markCommitStopped [commit end]
+                                    [9] commitRoot
+                                        [10] runWithPriority$1
+                                            [11] Scheduler_runWithPriority
+                                                [12] eventHandler=commitRootImpl
+                                                    [13] markCommitStarted [commit start]
+                                                    [13] invokeGuardedCallback
+                                                        [14] invokeGuardedCallbackImpl$1
+                                                            [15] dispatchEvent
+                                                                [16] func=commitBeforeMutationEffects
+                                                    [13] invokeGuardedCallback
+                                                        [14] invokeGuardedCallbackImpl$1
+                                                            [15] dispatchEvent
+                                                                [16] func=commitMutationEffects
+                                                                    [17] commitWork
+                                                                        [18] commitUpdate
+                                                                            [19] updateFiberProps {children: 1}
+                                                                            [19] updateProperties
+                                                                                [20] updateDOMProperties
+                                                                                    [21] setTextContent
+                                                                                        [22] (firstChild {#text}.nodeValue {'0'} = text {'1'}) [udpate dom]
+                                                    [13] (root {tag: 0} .current {tag: 3} = finishedWork {tag: 3})
+                                                    [13] invokeGuardedCallback
+                                                        [14] invokeGuardedCallbackImpl
+                                                            [15] dispatchEvent
+                                                                [16] func=commitLayoutEffects
+                                                                    [17] commitLifeCycles
+                                                    [13] flushSyncCallbackQueue
+                                                        [14] flushSyncCallbackQueueImpl
+                                                    [13] markCommitStopped [commit end]
                             [7] ensureRootIsScheduled
         [2] finishEventHandler
