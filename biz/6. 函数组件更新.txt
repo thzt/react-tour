@@ -84,7 +84,6 @@
                                                                 [16] createWorkInProgress
                                                                     [17] createFiber
                                                                     [17] (workInProgress {tag: 0} .child {null} = current {tag: 0} .child {tag: 5})
-                                                                    [17] resolveFunctionForHotReloading
                                             [11] performUnitOfWork {tag: 0} (<App />)
                                                 [12] beginWork$1
                                                     [13] beginWork
@@ -94,9 +93,22 @@
                                                                     [17] App [start]
                                                                     [17] useState
                                                                         [18] App [end]
+                                                            [15] reconcileChildren
+                                                                [16] reconcileChildFibers
+                                                                    [17] reconcileSingleElement
+                                                                        [18] useFiber
+                                                                            [19] createWorkInProgress
+                                                                                [20] createFiber
+                                                                                [20] (workInProgress {tag: 5} .child {null} = current {tag: 5} .child {null})
+                                                                        [18] coerceRef
+                                                                    [17] placeSingleChild
                                             [11] performUnitOfWork {tag: 5} (<div />)
                                                 [12] beginWork$1
                                                     [13] beginWork
+                                                        [14] updateHostComponent
+                                                            [15] reconcileChildren
+                                                                [16] reconcileChildFibers
+                                                                    [17] deleteRemainingChildren
                                                 [12] completeUnitOfWork
                                                     [13] completeWork {tag: 5} (<div />)
                                                     [13] completeWork {tag: 0} (<App />)

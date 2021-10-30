@@ -1,0 +1,26 @@
+import { useState } from 'react';
+
+function App() {
+  debugger;
+  const [state, setState] = useState(0);
+  debugger;
+
+  const increment = () => {
+    debugger;
+    setState(s => {
+      debugger;
+      return s + 1;
+    });
+    debugger;
+    setState(s => {
+      debugger;
+      return s + 2;
+    });
+    debugger;
+  };
+
+  debugger;
+  return <button onClick={increment}>{state}</button>;
+}
+
+export default App;

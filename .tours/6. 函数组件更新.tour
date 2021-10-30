@@ -521,12 +521,6 @@
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
-      "line": 25856,
-      "title": "____________________________________________________________________[17] resolveFunctionForHotReloading"
-    },
-    {
-      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
-      "description": " ",
       "line": 23626,
       "title": "____________________________________________[11] performUnitOfWork {tag: 0} (<App />)"
     },
@@ -581,6 +575,60 @@
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
       "description": " ",
+      "line": 17924,
+      "title": "____________________________________________________________[15] reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17543,
+      "title": "________________________________________________________________[16] reconcileChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "____________________________________________________________________[17] reconcileSingleElement"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14505,
+      "title": "________________________________________________________________________[18] useFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 13723,
+      "title": "____________________________________________________________________________[19] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "________________________________________________________________________________[20] createFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "________________________________________________________________________________[20] (workInProgress {tag: 5} .child {null} = current {tag: 5} .child {null})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14507,
+      "title": "________________________________________________________________________[18] coerceRef"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "____________________________________________________________________[17] placeSingleChild"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
       "line": 23626,
       "title": "____________________________________________[11] performUnitOfWork {tag: 5} (<div />)"
     },
@@ -595,6 +643,30 @@
       "description": " ",
       "line": 24936,
       "title": "____________________________________________________[13] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19890,
+      "title": "________________________________________________________[14] updateHostComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18217,
+      "title": "____________________________________________________________[15] reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17543,
+      "title": "________________________________________________________________[16] reconcileChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14670,
+      "title": "____________________________________________________________________[17] deleteRemainingChildren"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
