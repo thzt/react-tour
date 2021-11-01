@@ -2,26 +2,22 @@ import { useState } from 'react';
 
 function App() {
   debugger;
-  const [state, setState] = useState(0);
+  const [state1, setState1] = useState(0);
+  debugger;
+  const [state2, setState2] = useState('a');
   debugger;
 
   const onDivClick = () => {
     debugger;
-    setState(s => {
-      debugger;
-      return s + 1;
-    });
+    setState1(1);
     debugger;
-    setState(s => {
-      debugger;
-      return s + 2;
-    });
+    setState2('b');
     debugger;
   };
 
   debugger;
   return <div onClick={onDivClick}>
-    {state}
+    {state1}-{state2}
   </div>;
 }
 
