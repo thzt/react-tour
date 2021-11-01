@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 
 // import App from './App';
 // import App from './AppState';
-import App from './AppAsyncState';
 // import App from './AppTwoState';
+import App from './AppAsyncState';
 
 ReactDOM.render(
   <App />,

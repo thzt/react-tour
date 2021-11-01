@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function App() {
+const App = () => {
   debugger;
   const [state1, setState1] = useState(0);
   debugger;

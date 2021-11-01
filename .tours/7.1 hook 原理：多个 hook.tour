@@ -1,0 +1,931 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "7.1 hook 原理：多个 hook",
+  "steps": [
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27164,
+      "title": "[0] render [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27179,
+      "title": "____[1] legacyRenderSubtreeIntoContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27096,
+      "title": "________[2] unbatchedUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23324,
+      "title": "____________[3] fn"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27097,
+      "title": "________________[4] updateContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26493,
+      "title": "____________________[5] scheduleUpdateOnFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22761,
+      "title": "________________________[6] performSyncWorkOnRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23173,
+      "title": "____________________________[7] renderRootSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23573,
+      "title": "________________________________[8] prepareFreshStack"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23415,
+      "title": "____________________________________[9] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "________________________________________[10] createFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23580,
+      "title": "________________________________[8] markRenderStarted"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23585,
+      "title": "________________________________[8] workLoopSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________[9] performUnitOfWork ---- [HostRoot {tag: 3}]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________[9] performUnitOfWork ---- [IndeterminateComponent {tag: 2}] (<App />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________[10] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________________________________[11] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19859,
+      "title": "________________________________________________[12] mountIndeterminateComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18405,
+      "title": "____________________________________________________[13] renderWithHooks"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15527,
+      "title": "________________________________________________________[14] Component"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 4,
+      "title": "____________________________________________________________[15] App [start]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 5,
+      "title": "____________________________________________________________[15] useState (call)"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": " ",
+      "line": 1571,
+      "title": "________________________________________________________________[16] dispatcher.useState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16794,
+      "title": "____________________________________________________________________[17] mountState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16164,
+      "title": "________________________________________________________________________[18] mountWorkInProgressHook"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15656,
+      "title": "____________________________________________________________________________[19] (workInProgressHook === null) true"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 6,
+      "title": "____________________________________________________________[15] App [back to]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 7,
+      "title": "____________________________________________________________[15] useState (call)"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": " ",
+      "line": 1571,
+      "title": "________________________________________________________________[16] dispatcher.useState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16794,
+      "title": "____________________________________________________________________[17] mountState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16164,
+      "title": "________________________________________________________________________[18] mountWorkInProgressHook"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15656,
+      "title": "____________________________________________________________________________[19] (workInProgressHook === null) [false]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15661,
+      "title": "____________________________________________________________________________[19] (workInProgressHook = workInProgressHook.next = hook)"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 8,
+      "title": "____________________________________________________________[15] App [back to]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________[9] performUnitOfWork ---- [HostText {tag: 5}] (<div />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________[10] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23718,
+      "title": "________________________________________[10] completeUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________[11] completeWork ---- [HostText {tag: 5}] (<div />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________[11] completeWork ---- [IndeterminateComponent {tag: 2}] (<App />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________[11] completeWork ---- [HostRoot {tag: 3}]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23209,
+      "title": "____________________________[7] commitRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23920,
+      "title": "________________________________[8] getCurrentPriorityLevel"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11436,
+      "title": "____________________________________[9] Scheduler_getCurrentPriorityLevel"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23921,
+      "title": "________________________________[8] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11490,
+      "title": "____________________________________[9] reactPriorityToSchedulerPriority"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "____________________________________[9] Scheduler_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "________________________________________[10] eventHandler=commitRootImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23948,
+      "title": "____________________________________________[11] markCommitStarted"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24220,
+      "title": "____________________________________________[11] markCommitStopped"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27180,
+      "title": "____[1]  render [return]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6030,
+      "title": "[0]  user click [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6034,
+      "title": "____[1] discreteUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3756,
+      "title": "________[2] discreteUpdatesImpl=discreteUpdates$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23306,
+      "title": "____________[3] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "________________[4] Scheduler_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "____________________[5] eventHandler=dispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6069,
+      "title": "________________________[6] attemptToDispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6150,
+      "title": "____________________________[7] dispatchEventForPluginEventSystem"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8652,
+      "title": "________________________________[8] batchedEventUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3745,
+      "title": "____________________________________[9] batchedEventUpdatesImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23289,
+      "title": "________________________________________[10] fn"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8653,
+      "title": "____________________________________________[11] dispatchEventsForPlugins"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8444,
+      "title": "________________________________________________[12] processDispatchQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8433,
+      "title": "____________________________________________________[13] processDispatchQueueItemsInOrder"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8420,
+      "title": "________________________________________________________[14] executeDispatch"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8388,
+      "title": "____________________________________________________________[15] invokeGuardedCallbackAndCatchFirstError"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 4070,
+      "title": "________________________________________________________________[16] invokeGuardedCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 4056,
+      "title": "____________________________________________________________________[17] invokeGuardedCallbackImpl$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3994,
+      "title": "________________________________________________________________________[18] fakeNode.dispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3945,
+      "title": "____________________________________________________________________________[19] func.apply"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 11,
+      "title": "________________________________________________________________________________[20] onDivClick [start]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 12,
+      "title": "________________________________________________________________________________[20] setState1 [call]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16649,
+      "title": "____________________________________________________________________________________[21] lastRenderedReducer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16657,
+      "title": "____________________________________________________________________________________[21] objectIs ({1} {0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16681,
+      "title": "____________________________________________________________________________________[21] scheduleUpdateOnFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22715,
+      "title": "________________________________________________________________________________________[22] checkForNestedUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22716,
+      "title": "________________________________________________________________________________________[22] warnAboutRenderPhaseUpdatesInDEV"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22717,
+      "title": "________________________________________________________________________________________[22] markUpdateLaneFromFiberToRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22725,
+      "title": "________________________________________________________________________________________[22] markRootUpdated"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22750,
+      "title": "________________________________________________________________________________________[22] getCurrentPriorityLevel"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22763,
+      "title": "________________________________________________________________________________________[22] ensureRootIsScheduled"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22860,
+      "title": "____________________________________________________________________________________________[23] markStarvedLanesAsExpired"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22862,
+      "title": "____________________________________________________________________________________________[23] getNextLanes"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22864,
+      "title": "____________________________________________________________________________________________[23] returnNextLanesPriority"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22897,
+      "title": "____________________________________________________________________________________________[23] scheduleSyncCallback (syncQueue = [callback=performSyncWorkOnRoot])"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11503,
+      "title": "________________________________________________________________________________________________[24] Scheduler_scheduleCallback=unstable_scheduleCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22764,
+      "title": "________________________________________________________________________________________[22] schedulePendingInteractions"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25143,
+      "title": "____________________________________________________________________________________________[23] scheduleInteractions"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16685,
+      "title": "____________________________________________________________________________________[21] markStateUpdateScheduled"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16687,
+      "title": "____________________________________________________________________________________[21] setState1 [return]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 13,
+      "title": "________________________________________________________________________________[20] onDivClick [back to]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 14,
+      "title": "________________________________________________________________________________[20] setState2 [call]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16681,
+      "title": "____________________________________________________________________________________[21] scheduleUpdateOnFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22763,
+      "title": "________________________________________________________________________________________[22] ensureRootIsScheduled"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16687,
+      "title": "____________________________________________________________________________________[21] setState2 [return]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 16,
+      "title": "________________________________________________________________________________[20] onDivClick [return]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23313,
+      "title": "____________[3] flushSyncCallbackQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11521,
+      "title": "________________[4] Scheduler_cancelCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11524,
+      "title": "________________[4] flushSyncCallbackQueueImpl (syncQueue = [callback=performSyncWorkOnRoot])"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11537,
+      "title": "____________________[5] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "________________________[6] Scheduler_runWithPriority=unstable_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "____________________________[7] eventHandler"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11542,
+      "title": "________________________________[8] callback=performSyncWorkOnRoot (22897)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23173,
+      "title": "____________________________________[9] renderRootSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23580,
+      "title": "________________________________________[10] markRenderStarted [render start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23585,
+      "title": "________________________________________[10] workLoopSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________________[11] performUnitOfWork {tag: 3}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________________[12] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________________________________________[13] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19831,
+      "title": "________________________________________________________[14] bailoutOnAlreadyFinishedWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________________[11] performUnitOfWork {tag: 0} (<App />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________________[12] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________________________________________[13] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19873,
+      "title": "________________________________________________________[14] updateFunctionComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17902,
+      "title": "____________________________________________________________[15] renderWithHooks"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15527,
+      "title": "________________________________________________________________[16] Component"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 4,
+      "title": "____________________________________________________________________[17] App [start]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 5,
+      "title": "____________________________________________________________________[17] useState [call]"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": " ",
+      "line": 1571,
+      "title": "________________________________________________________________________[18] dispatcher.useState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16988,
+      "title": "________________________________________________________________________________[20] updateState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16183,
+      "title": "____________________________________________________________________________________[21] updateReducer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15762,
+      "title": "________________________________________________________________________________________[22] updateWorkInProgressHook {baseState: 0}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15875,
+      "title": "________________________________________________________________________________________[22] objectIs"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15876,
+      "title": "________________________________________________________________________________________[22] markWorkInProgressReceivedUpdate"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 6,
+      "title": "____________________________________________________________________[17]  App [back to]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 7,
+      "title": "____________________________________________________________________[17] useState [call]"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": " ",
+      "line": 1571,
+      "title": "________________________________________________________________________[18] dispatcher.useState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16988,
+      "title": "____________________________________________________________________________[19] updateState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16183,
+      "title": "________________________________________________________________________________[20] updateReducer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15762,
+      "title": "____________________________________________________________________________________[21] updateWorkInProgressHook"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15675,
+      "title": "________________________________________________________________________________________[22] (currentHook === null) [false]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15684,
+      "title": "________________________________________________________________________________________[22] (nextCurrentHook = currentHook {baseState: 0}.next {baseState: 'a'})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15854,
+      "title": "________________________________________________________________________________________[22] (update.eagerReducer === reducer) [false]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15860,
+      "title": "________________________________________________________________________________________[22] reducer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15875,
+      "title": "________________________________________________________________________________________[22] objectIs"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15876,
+      "title": "________________________________________________________________________________________[22] markWorkInProgressReceivedUpdate"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 8,
+      "title": "____________________________________________________________________[17] App [back to]"
+    },
+    {
+      "file": "example-project/src/AppTwoState.js",
+      "description": " ",
+      "line": 19,
+      "title": "____________________________________________________________________[17] App [return]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________________[11] performUnitOfWork {tag: 5} (<div />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________________[12] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________________________________________[13] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19890,
+      "title": "________________________________________________________[14] updateHostComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23718,
+      "title": "________________________________________________[12] completeUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________________[13] completeWork {tag: 5} (<div />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________________[13] completeWork {tag: 0} (<App />)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23746,
+      "title": "____________________________________________________[13] completeWork {tag: 3}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23611,
+      "title": "________________________________________[10] markRenderStopped [render end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23209,
+      "title": "____________________________________[9] commitRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23921,
+      "title": "________________________________________[10] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "____________________________________________[11] Scheduler_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "________________________________________________[12] eventHandler=commitRootImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23948,
+      "title": "____________________________________________________[13] markCommitStarted [commit start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24234,
+      "title": "____________________________________________________[13] markCommitStopped [commit end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6035,
+      "title": "____[1]  user click [end]"
+    }
+  ],
+  "ref": "v17.0.2"
+}

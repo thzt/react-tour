@@ -62,7 +62,7 @@
                                                                                     [21] markStateUpdateScheduled
                                                                                     [21] setState [return]
                                                                                 [20] onDivClick [back to]
-                                                                                    [21] onDivClick [return]
+                                                                                [20] onDivClick [return]
             [3] resetRenderTimer
             [3] flushSyncCallbackQueue
                 [4] Scheduler_cancelCallback

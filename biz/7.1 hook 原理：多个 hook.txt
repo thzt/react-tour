@@ -1,0 +1,154 @@
+[0] render [start]
+    [1] legacyRenderSubtreeIntoContainer
+        [2] unbatchedUpdates
+            [3] fn
+                [4] updateContainer
+                    [5] scheduleUpdateOnFiber
+                        [6] performSyncWorkOnRoot
+                            [7] renderRootSync
+                                [8] prepareFreshStack
+                                    [9] createWorkInProgress
+                                        [10] createFiber
+                                [8] markRenderStarted
+                                [8] workLoopSync
+                                    [9] performUnitOfWork ---- [HostRoot {tag: 3}]
+                                    [9] performUnitOfWork ---- [IndeterminateComponent {tag: 2}] (<App />)
+                                        [10] beginWork$1
+                                            [11] beginWork
+                                                [12] mountIndeterminateComponent
+                                                    [13] renderWithHooks
+                                                        [14] Component
+                                                            [15] App [start]
+                                                            [15] useState (call)
+                                                                [16] dispatcher.useState
+                                                                    [17] mountState
+                                                                        [18] mountWorkInProgressHook
+                                                                            [19] (workInProgressHook === null) true
+                                                            [15] App [back to]
+                                                            [15] useState (call)
+                                                                [16] dispatcher.useState
+                                                                    [17] mountState
+                                                                        [18] mountWorkInProgressHook
+                                                                            [19] (workInProgressHook === null) [false]
+                                                                            [19] (workInProgressHook = workInProgressHook.next = hook)
+                                                            [15] App [back to]
+                                    [9] performUnitOfWork ---- [HostText {tag: 5}] (<div />)
+                                        [10] beginWork$1
+                                        [10] completeUnitOfWork
+                                            [11] completeWork ---- [HostText {tag: 5}] (<div />)
+                                            [11] completeWork ---- [IndeterminateComponent {tag: 2}] (<App />)
+                                            [11] completeWork ---- [HostRoot {tag: 3}]
+                            [7] commitRoot
+                                [8] getCurrentPriorityLevel
+                                    [9] Scheduler_getCurrentPriorityLevel
+                                [8] runWithPriority$1
+                                    [9] reactPriorityToSchedulerPriority
+                                    [9] Scheduler_runWithPriority
+                                        [10] eventHandler=commitRootImpl
+                                            [11] markCommitStarted
+                                            [11] markCommitStopped
+    [1]  render [return]
+[0]  user click [start]
+    [1] discreteUpdates
+        [2] discreteUpdatesImpl=discreteUpdates$1
+            [3] runWithPriority$1
+                [4] Scheduler_runWithPriority
+                    [5] eventHandler=dispatchEvent
+                        [6] attemptToDispatchEvent
+                            [7] dispatchEventForPluginEventSystem
+                                [8] batchedEventUpdates
+                                    [9] batchedEventUpdatesImpl
+                                        [10] fn
+                                            [11] dispatchEventsForPlugins
+                                                [12] processDispatchQueue
+                                                    [13] processDispatchQueueItemsInOrder
+                                                        [14] executeDispatch
+                                                            [15] invokeGuardedCallbackAndCatchFirstError
+                                                                [16] invokeGuardedCallback
+                                                                    [17] invokeGuardedCallbackImpl$1
+                                                                        [18] fakeNode.dispatchEvent
+                                                                            [19] func.apply
+                                                                                [20] onDivClick [start]
+                                                                                [20] setState1 [call]
+                                                                                    [21] lastRenderedReducer
+                                                                                    [21] objectIs ({1} {0})
+                                                                                    [21] scheduleUpdateOnFiber
+                                                                                        [22] checkForNestedUpdates
+                                                                                        [22] warnAboutRenderPhaseUpdatesInDEV
+                                                                                        [22] markUpdateLaneFromFiberToRoot
+                                                                                        [22] markRootUpdated
+                                                                                        [22] getCurrentPriorityLevel
+                                                                                        [22] ensureRootIsScheduled
+                                                                                            [23] markStarvedLanesAsExpired
+                                                                                            [23] getNextLanes
+                                                                                            [23] returnNextLanesPriority
+                                                                                            [23] scheduleSyncCallback (syncQueue = [callback=performSyncWorkOnRoot])
+                                                                                                [24] Scheduler_scheduleCallback=unstable_scheduleCallback
+                                                                                        [22] schedulePendingInteractions
+                                                                                            [23] scheduleInteractions
+                                                                                    [21] markStateUpdateScheduled
+                                                                                    [21] setState1 [return]
+                                                                                [20] onDivClick [back to]
+                                                                                [20] setState2 [call]
+                                                                                    [21] scheduleUpdateOnFiber
+                                                                                        [22] ensureRootIsScheduled
+                                                                                    [21] setState2 [return]
+                                                                                [20] onDivClick [return]
+            [3] flushSyncCallbackQueue
+                [4] Scheduler_cancelCallback
+                [4] flushSyncCallbackQueueImpl (syncQueue = [callback=performSyncWorkOnRoot])
+                    [5] runWithPriority$1
+                        [6] Scheduler_runWithPriority=unstable_runWithPriority
+                            [7] eventHandler
+                                [8] callback=performSyncWorkOnRoot (22897)
+                                    [9] renderRootSync
+                                        [10] markRenderStarted [render start]
+                                        [10] workLoopSync
+                                            [11] performUnitOfWork {tag: 3}
+                                                [12] beginWork$1
+                                                    [13] beginWork
+                                                        [14] bailoutOnAlreadyFinishedWork
+                                            [11] performUnitOfWork {tag: 0} (<App />)
+                                                [12] beginWork$1
+                                                    [13] beginWork
+                                                        [14] updateFunctionComponent
+                                                            [15] renderWithHooks
+                                                                [16] Component
+                                                                    [17] App [start]
+                                                                    [17] useState [call]
+                                                                        [18] dispatcher.useState
+                                                                                [20] updateState
+                                                                                    [21] updateReducer
+                                                                                        [22] updateWorkInProgressHook {baseState: 0}
+                                                                                        [22] objectIs
+                                                                                        [22] markWorkInProgressReceivedUpdate
+                                                                    [17]  App [back to]
+                                                                    [17] useState [call]
+                                                                        [18] dispatcher.useState
+                                                                            [19] updateState
+                                                                                [20] updateReducer
+                                                                                    [21] updateWorkInProgressHook
+                                                                                        [22] (currentHook === null) [false]
+                                                                                        [22] (nextCurrentHook = currentHook {baseState: 0}.next {baseState: 'a'})
+                                                                                        [22] (update.eagerReducer === reducer) [false]
+                                                                                        [22] reducer
+                                                                                        [22] objectIs
+                                                                                        [22] markWorkInProgressReceivedUpdate
+                                                                    [17] App [back to]
+                                                                    [17] App [return]
+                                            [11] performUnitOfWork {tag: 5} (<div />)
+                                                [12] beginWork$1
+                                                    [13] beginWork
+                                                        [14] updateHostComponent
+                                                [12] completeUnitOfWork
+                                                    [13] completeWork {tag: 5} (<div />)
+                                                    [13] completeWork {tag: 0} (<App />)
+                                                    [13] completeWork {tag: 3}
+                                        [10] markRenderStopped [render end]
+                                    [9] commitRoot
+                                        [10] runWithPriority$1
+                                            [11] Scheduler_runWithPriority
+                                                [12] eventHandler=commitRootImpl
+                                                    [13] markCommitStarted [commit start]
+                                                    [13] markCommitStopped [commit end]
+    [1]  user click [end]

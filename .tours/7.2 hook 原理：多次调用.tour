@@ -1,6 +1,6 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "7.函数组件的异步更新",
+  "title": "7.2 hook 原理：多次调用",
   "steps": [
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
@@ -390,7 +390,7 @@
       "file": "example-project/src/AppAsyncState.js",
       "description": " ",
       "line": 20,
-      "title": "____________________________________________________________________________________[21] onDivClick [return]"
+      "title": "________________________________________________________________________________[20] onDivClick [return]"
     },
     {
       "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
