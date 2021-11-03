@@ -1,0 +1,475 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "8. 组件的重新渲染",
+  "steps": [
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23143,
+      "title": "[0] performSyncWorkOnRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23173,
+      "title": "____[1] renderRootSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23573,
+      "title": "________[2] prepareFreshStack"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23415,
+      "title": "____________[3] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "________________[4] (workInProgress {tag: 3}.child = current.child {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23585,
+      "title": "________[2] workLoopSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 3}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19831,
+      "title": "________________________[6] bailoutOnAlreadyFinishedWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19580,
+      "title": "____________________________[7] cloneChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14690,
+      "title": "________________________________[8] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "____________________________________[9] createFiber {tag: 0}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25802,
+      "title": "____________________________________[9] (workInProgress {tag: 0}.alternate = current {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25803,
+      "title": "____________________________________[9] (current {tag: 0}.alternate = workInProgress {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "____________________________________[9] (workInProgress {tag: 3}.child = current.child {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14691,
+      "title": "________________________________[8] (workInProgress {tag: 3}.child = newChild {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14692,
+      "title": "________________________________[8] (newChild {tag: 0}.return = workInProgress {tag: 3})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 0}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19831,
+      "title": "________________________[6] bailoutOnAlreadyFinishedWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19580,
+      "title": "____________________________[7] cloneChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14690,
+      "title": "________________________________[8] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "____________________________________[9] createFiber {tag: 5}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25802,
+      "title": "____________________________________[9] (workInProgress {tag: 5}.alternate = current {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25803,
+      "title": "____________________________________[9] (current {tag: 5}.alternate = workInProgress {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "____________________________________[9] (workInProgress {tag: 5}.child = current.child {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14691,
+      "title": "________________________________[8] (workInProgress {tag: 0}.child = newChild {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14692,
+      "title": "________________________________[8] (newChild {tag: 5}.return = workInProgress {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 5}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19831,
+      "title": "________________________[6] bailoutOnAlreadyFinishedWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19580,
+      "title": "____________________________[7] cloneChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14690,
+      "title": "________________________________[8] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "____________________________________[9] createFiber {tag: 0}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25802,
+      "title": "____________________________________[9] (workInProgress {tag: 0}.alternate = current {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25803,
+      "title": "____________________________________[9] (current {tag: 0}.alternate = workInProgress {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "____________________________________[9] workInProgress {tag: 0}.child = current.child {tag: 5}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14691,
+      "title": "________________________________[8] (workInProgress {tag: 5}.child = newChild {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14692,
+      "title": "________________________________[8] (newChild {tag: 0}.return = workInProgress {tag: 6})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 0}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19873,
+      "title": "________________________[6] updateFunctionComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17902,
+      "title": "____________________________[7] renderWithHooks"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15527,
+      "title": "________________________________[8] Component"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17924,
+      "title": "____________________________[7] reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17543,
+      "title": "________________________________[8] reconcileChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "____________________________________[9] reconcileSingleElement"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14505,
+      "title": "________________________________________[10] useFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 13723,
+      "title": "____________________________________________[11] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "________________________________________________[12] createFiber {tag: 5}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25802,
+      "title": "________________________________________________[12] (workInProgress {tag: 5}.alternate = current {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25803,
+      "title": "________________________________________________[12] (current {tag: 5}.alternate = workInProgress {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "________________________________________________[12] (workInProgress {tag: 5}.child = current.child {tag: 15})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14508,
+      "title": "________________________________________[10] (_existing3 {tag: 5}.return = returnFiber {tag: 0})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 5}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19890,
+      "title": "________________________[6] updateHostComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 18217,
+      "title": "____________________________[7] reconcileChildren"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17543,
+      "title": "________________________________[8] reconcileChildFibers"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14597,
+      "title": "____________________________________[9] reconcileSingleElement"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14505,
+      "title": "________________________________________[10] useFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 13723,
+      "title": "____________________________________________[11] createWorkInProgress"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25789,
+      "title": "________________________________________________[12] createFiber {tag: 15}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25802,
+      "title": "________________________________________________[12] (workInProgress {tag: 15}.alternate = current {tag: 15})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25803,
+      "title": "________________________________________________[12] (current {tag: 15}.alternate = workInProgress {tag: 15})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25828,
+      "title": "________________________________________________[12] (workInProgress {tag: 15}.child = current.child {tag: 6})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 14508,
+      "title": "________________________________________[10] (_existing3 {tag: 15}.return = returnFiber {tag: 5})"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________[3] performUnitOfWork {tag: 15}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________[4] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________[5] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19950,
+      "title": "________________________[6] updateSimpleMemoComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17752,
+      "title": "____________________________[7] bailoutOnAlreadyFinishedWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23209,
+      "title": "____[1] commitRoot"
+    }
+  ],
+  "ref": "v17.0.2"
+}

@@ -1,0 +1,78 @@
+[0] performSyncWorkOnRoot
+    [1] renderRootSync
+        [2] prepareFreshStack
+            [3] createWorkInProgress
+                [4] (workInProgress {tag: 3}.child = current.child {tag: 0})
+        [2] workLoopSync
+            [3] performUnitOfWork {tag: 3}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] bailoutOnAlreadyFinishedWork
+                            [7] cloneChildFibers
+                                [8] createWorkInProgress
+                                    [9] createFiber {tag: 0}
+                                    [9] (workInProgress {tag: 0}.alternate = current {tag: 0})
+                                    [9] (current {tag: 0}.alternate = workInProgress {tag: 0})
+                                    [9] (workInProgress {tag: 3}.child = current.child {tag: 5})
+                                [8] (workInProgress {tag: 3}.child = newChild {tag: 0})
+                                [8] (newChild {tag: 0}.return = workInProgress {tag: 3})
+            [3] performUnitOfWork {tag: 0}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] bailoutOnAlreadyFinishedWork
+                            [7] cloneChildFibers
+                                [8] createWorkInProgress
+                                    [9] createFiber {tag: 5}
+                                    [9] (workInProgress {tag: 5}.alternate = current {tag: 5})
+                                    [9] (current {tag: 5}.alternate = workInProgress {tag: 5})
+                                    [9] (workInProgress {tag: 5}.child = current.child {tag: 0})
+                                [8] (workInProgress {tag: 0}.child = newChild {tag: 5})
+                                [8] (newChild {tag: 5}.return = workInProgress {tag: 0})
+            [3] performUnitOfWork {tag: 5}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] bailoutOnAlreadyFinishedWork
+                            [7] cloneChildFibers
+                                [8] createWorkInProgress
+                                    [9] createFiber {tag: 0}
+                                    [9] (workInProgress {tag: 0}.alternate = current {tag: 0})
+                                    [9] (current {tag: 0}.alternate = workInProgress {tag: 0})
+                                    [9] workInProgress {tag: 0}.child = current.child {tag: 5}
+                                [8] (workInProgress {tag: 5}.child = newChild {tag: 0})
+                                [8] (newChild {tag: 0}.return = workInProgress {tag: 6})
+            [3] performUnitOfWork {tag: 0}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] updateFunctionComponent
+                            [7] renderWithHooks
+                                [8] Component
+                            [7] reconcileChildren
+                                [8] reconcileChildFibers
+                                    [9] reconcileSingleElement
+                                        [10] useFiber
+                                            [11] createWorkInProgress
+                                                [12] createFiber {tag: 5}
+                                                [12] (workInProgress {tag: 5}.alternate = current {tag: 5})
+                                                [12] (current {tag: 5}.alternate = workInProgress {tag: 5})
+                                                [12] (workInProgress {tag: 5}.child = current.child {tag: 15})
+                                        [10] (_existing3 {tag: 5}.return = returnFiber {tag: 0})
+            [3] performUnitOfWork {tag: 5}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] updateHostComponent
+                            [7] reconcileChildren
+                                [8] reconcileChildFibers
+                                    [9] reconcileSingleElement
+                                        [10] useFiber
+                                            [11] createWorkInProgress
+                                                [12] createFiber {tag: 15}
+                                                [12] (workInProgress {tag: 15}.alternate = current {tag: 15})
+                                                [12] (current {tag: 15}.alternate = workInProgress {tag: 15})
+                                                [12] (workInProgress {tag: 15}.child = current.child {tag: 6})
+                                        [10] (_existing3 {tag: 15}.return = returnFiber {tag: 5})
+            [3] performUnitOfWork {tag: 15}
+                [4] beginWork$1
+                    [5] beginWork
+                        [6] updateSimpleMemoComponent
+                            [7] bailoutOnAlreadyFinishedWork
+    [1] commitRoot
