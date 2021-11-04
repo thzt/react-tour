@@ -1,0 +1,93 @@
+[0] load [start]
+    [1] (discreteEventPairsForSimpleEventPlugin=[...])
+    [1] registerSimpleEvents
+        [2] registerSimplePluginEventsAndSetTheirPriorities
+            [3] registerTwoPhaseEvent
+                [4] registerDirectEvent
+                    [5] allNativeEvents.add { 'click' }
+[0] ReactDOM.render
+    [1] render [start]
+    [1] legacyRenderSubtreeIntoContainer
+        [2] legacyCreateRootFromDOMContainer
+            [3] createLegacyRoot
+                [4] new ReactDOMBlockingRoot
+                    [5] createRootImpl
+                        [6] createContainer
+                            [7] createFiberRoot
+                                [8] new FiberRootNode (FiberRootNode)
+                                [8] createHostRootFiber {tag: 3}
+                                    [9] createFiber
+                        [6] listenToAllSupportedEvents
+                            [7] allNativeEvents.forEach
+                                [8] listenToNativeEvent
+                                    [9] addTrappedEventListener
+                                        [10] createEventListenerWrapperWithPriority
+                                            [11] (listenerWrapper = dispatchDiscreteEvent) #6029
+                                                [12] (listenerWrapper.bind)
+                                        [10] addEventBubbleListener
+                                            [11] target.addEventListener { 'click', listener #6029, false }
+    [1] render [end]
+[0] dispatchDiscreteEvent [start] (user click) #6029
+    [1] discreteUpdates
+        [2] discreteUpdatesImpl
+            [3] runWithPriority$1
+                [4] Scheduler_runWithPriority
+                    [5] eventHandler=dispatchEvent
+                        [6] attemptToDispatchEvent
+                            [7] getClosestInstanceFromNode { tag: 5 }
+                            [7] dispatchEventForPluginEventSystem
+                                [8] batchedEventUpdates
+                                    [9] batchedEventUpdatesImpl=batchedEventUpdates$1
+                                        [10] fn
+                                            [11] dispatchEventsForPlugins
+                                                [12] extractEvents$5
+                                                    [13] extractEvents$4
+                                                        [14] accumulateSinglePhaseListeners
+                                                            [15] getListener
+                                                                [16] getFiberCurrentPropsFromNode {children: 'hello world', onClick: onDivClick}
+                                                                [16] (listener = props[registrationName]) { onDivClick }
+                                                            [15] createDispatchListener { currentTarget (div), instance (Fiber Node), listener (onDivClick) }
+                                                            [15] listeners.push
+                                                [12] processDispatchQueue
+                                                    [13] processDispatchQueueItemsInOrder
+                                                        [14] executeDispatch
+                                                            [15] invokeGuardedCallbackAndCatchFirstError
+                                                                [16] invokeGuardedCallback
+                                                                    [17] invokeGuardedCallbackImpl$1=invokeGuardedCallbackDev
+                                                                        [18] fakeNode.dispatchEvent
+                                                                            [19] func {onDivClick}.apply
+                                                                                [20] onDivClick [start]
+                                                                                [20] setState=dispatchAction
+                                                                                    [21] dispatchAction [start]
+                                                                                    [21] scheduleUpdateOnFiber
+                                                                                        [22] ensureRootIsScheduled
+                                                                                            [23] scheduleSyncCallback
+                                                                                                [24] (syncQueue = [callback {performSyncWorkOnRoot #23142}])
+                                                                                                [24] Scheduler_scheduleCallback
+                                                                                    [21] dispatchAction [end]
+                                                                                [20] onDivClick [end]
+            [3] flushSyncCallbackQueue
+                [4] flushSyncCallbackQueueImpl
+                    [5] runWithPriority$1
+                        [6] Scheduler_runWithPriority
+                            [7] eventHandler
+                                [8] callback=performSyncWorkOnRoot
+                                    [9] performSyncWorkOnRoot [start] #23142
+                                    [9] renderRootSync
+                                        [10] workLoopSync
+                                            [11] performUnitOfWork
+                                                [12] beginWork$1
+                                                    [13] beginWork
+                                                        [14] updateFunctionComponent
+                                                            [15] renderWithHooks
+                                                                [16] Component
+                                                                    [17] App [start]
+                                                                    [17] useState
+                                                                        [18] dispatcher.useState
+                                                                            [19] updateState
+                                                                                [20] updateReducer
+                                                                                    [21] updateWorkInProgressHook
+                                                                    [17] App [end]
+                                    [9] commitRoot
+                                    [9] performSyncWorkOnRoot [end]
+    [1] dispatchDiscreteEvent [end]

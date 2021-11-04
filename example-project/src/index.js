@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom';
 // import App from './AppState';
 // import App from './AppTwoState';
 // import App from './AppAsyncState';
-import App from './AppDiff';
+// import App from './AppDiff';
+import App from './AppEvent';
 
 ReactDOM.render(
   <App />,

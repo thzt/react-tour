@@ -1,0 +1,565 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "9.事件系统",
+  "steps": [
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 13,
+      "title": "[0] load [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 5096,
+      "title": "____[1] (discreteEventPairsForSimpleEventPlugin=[...])"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8338,
+      "title": "____[1] registerSimpleEvents"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 5151,
+      "title": "________[2] registerSimplePluginEventsAndSetTheirPriorities"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 5133,
+      "title": "____________[3] registerTwoPhaseEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 131,
+      "title": "________________[4] registerDirectEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 153,
+      "title": "____________________[5] allNativeEvents.add { 'click' }"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/index.js",
+      "description": " ",
+      "line": 11,
+      "title": "[0] ReactDOM.render"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27165,
+      "title": "____[1] render [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27179,
+      "title": "____[1] legacyRenderSubtreeIntoContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27083,
+      "title": "________[2] legacyCreateRootFromDOMContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27057,
+      "title": "____________[3] createLegacyRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26960,
+      "title": "________________[4] new ReactDOMBlockingRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26874,
+      "title": "____________________[5] createRootImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26920,
+      "title": "________________________[6] createContainer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26434,
+      "title": "____________________________[7] createFiberRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26309,
+      "title": "________________________________[8] new FiberRootNode (FiberRootNode)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26313,
+      "title": "________________________________[8] createHostRootFiber {tag: 3}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 25951,
+      "title": "____________________________________[9] createFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 26926,
+      "title": "________________________[6] listenToAllSupportedEvents"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8469,
+      "title": "____________________________[7] allNativeEvents.forEach"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8471,
+      "title": "________________________________[8] listenToNativeEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8519,
+      "title": "____________________________________[9] addTrappedEventListener"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8525,
+      "title": "________________________________________[10] createEventListenerWrapperWithPriority"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6013,
+      "title": "____________________________________________[11] (listenerWrapper = dispatchDiscreteEvent) #6029"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6026,
+      "title": "________________________________________________[12] (listenerWrapper.bind)"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8556,
+      "title": "________________________________________[10] addEventBubbleListener"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6156,
+      "title": "____________________________________________[11] target.addEventListener { 'click', listener #6029, false }"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 27180,
+      "title": "____[1] render [end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6029,
+      "title": "[0] dispatchDiscreteEvent [start] (user click) #6029"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6034,
+      "title": "____[1] discreteUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3756,
+      "title": "________[2] discreteUpdatesImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23306,
+      "title": "____________[3] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "________________[4] Scheduler_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "____________________[5] eventHandler=dispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6069,
+      "title": "________________________[6] attemptToDispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6104,
+      "title": "____________________________[7] getClosestInstanceFromNode { tag: 5 }"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6150,
+      "title": "____________________________[7] dispatchEventForPluginEventSystem"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8652,
+      "title": "________________________________[8] batchedEventUpdates"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3745,
+      "title": "____________________________________[9] batchedEventUpdatesImpl=batchedEventUpdates$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23289,
+      "title": "________________________________________[10] fn"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8653,
+      "title": "____________________________________________[11] dispatchEventsForPlugins"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8443,
+      "title": "________________________________________________[12] extractEvents$5"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8351,
+      "title": "____________________________________________________[13] extractEvents$4"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8323,
+      "title": "________________________________________________________[14] accumulateSinglePhaseListeners"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8682,
+      "title": "____________________________________________________________[15] getListener"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3817,
+      "title": "________________________________________________________________[16] getFiberCurrentPropsFromNode {children: 'hello world', onClick: onDivClick}"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3824,
+      "title": "________________________________________________________________[16] (listener = props[registrationName]) { onDivClick }"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8685,
+      "title": "____________________________________________________________[15] createDispatchListener { currentTarget (div), instance (Fiber Node), listener (onDivClick) }"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8685,
+      "title": "____________________________________________________________[15] listeners.push"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8444,
+      "title": "________________________________________________[12] processDispatchQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8433,
+      "title": "____________________________________________________[13] processDispatchQueueItemsInOrder"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8420,
+      "title": "________________________________________________________[14] executeDispatch"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 8388,
+      "title": "____________________________________________________________[15] invokeGuardedCallbackAndCatchFirstError"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 4070,
+      "title": "________________________________________________________________[16] invokeGuardedCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 4056,
+      "title": "____________________________________________________________________[17] invokeGuardedCallbackImpl$1=invokeGuardedCallbackDev"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3994,
+      "title": "________________________________________________________________________[18] fakeNode.dispatchEvent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 3945,
+      "title": "____________________________________________________________________________[19] func {onDivClick}.apply"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 9,
+      "title": "________________________________________________________________________________[20] onDivClick [start]"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 10,
+      "title": "________________________________________________________________________________[20] setState=dispatchAction"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16598,
+      "title": "____________________________________________________________________________________[21] dispatchAction [start]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16681,
+      "title": "____________________________________________________________________________________[21] scheduleUpdateOnFiber"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22763,
+      "title": "________________________________________________________________________________________[22] ensureRootIsScheduled"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 22897,
+      "title": "____________________________________________________________________________________________[23] scheduleSyncCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11501,
+      "title": "________________________________________________________________________________________________[24] (syncQueue = [callback {performSyncWorkOnRoot #23142}])"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11503,
+      "title": "________________________________________________________________________________________________[24] Scheduler_scheduleCallback"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16687,
+      "title": "____________________________________________________________________________________[21] dispatchAction [end]"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 11,
+      "title": "________________________________________________________________________________[20] onDivClick [end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23313,
+      "title": "____________[3] flushSyncCallbackQueue"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11524,
+      "title": "________________[4] flushSyncCallbackQueueImpl"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11537,
+      "title": "____________________[5] runWithPriority$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11491,
+      "title": "________________________[6] Scheduler_runWithPriority"
+    },
+    {
+      "file": "build/node_modules/scheduler/cjs/scheduler.development.js",
+      "description": " ",
+      "line": 468,
+      "title": "____________________________[7] eventHandler"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 11542,
+      "title": "________________________________[8] callback=performSyncWorkOnRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23143,
+      "title": "____________________________________[9] performSyncWorkOnRoot [start] #23142"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23173,
+      "title": "____________________________________[9] renderRootSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23585,
+      "title": "________________________________________[10] workLoopSync"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23626,
+      "title": "____________________________________________[11] performUnitOfWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23707,
+      "title": "________________________________________________[12] beginWork$1"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 24936,
+      "title": "____________________________________________________[13] beginWork"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 19873,
+      "title": "________________________________________________________[14] updateFunctionComponent"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 17902,
+      "title": "____________________________________________________________[15] renderWithHooks"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15527,
+      "title": "________________________________________________________________[16] Component"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 4,
+      "title": "____________________________________________________________________[17] App [start]"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 5,
+      "title": "____________________________________________________________________[17] useState"
+    },
+    {
+      "file": "build/node_modules/react/cjs/react.development.js",
+      "description": " ",
+      "line": 1571,
+      "title": "________________________________________________________________________[18] dispatcher.useState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16988,
+      "title": "____________________________________________________________________________[19] updateState"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 16183,
+      "title": "________________________________________________________________________________[20] updateReducer"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 15762,
+      "title": "____________________________________________________________________________________[21] updateWorkInProgressHook"
+    },
+    {
+      "file": "../../thzt/react-tour/example-project/src/AppEvent.js",
+      "description": " ",
+      "line": 13,
+      "title": "____________________________________________________________________[17] App [end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23209,
+      "title": "____________________________________[9] commitRoot"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 23214,
+      "title": "____________________________________[9] performSyncWorkOnRoot [end]"
+    },
+    {
+      "file": "build/node_modules/react-dom/cjs/react-dom.development.js",
+      "description": " ",
+      "line": 6035,
+      "title": "____[1] dispatchDiscreteEvent [end]"
+    }
+  ],
+  "ref": "v17.0.2"
+}
